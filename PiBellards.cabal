@@ -3,7 +3,7 @@
 
 name:                PiBellards
 version:             0.1.0.0
-synopsis:            Implementation of Bellard's algorithm for computing pi to 'n' digits.
+synopsis:            Implementation of Bellard's algorithm for calculating pi to 'n' digits in Haskell.
 -- description:         
 license:             MIT
 license-file:        LICENSE

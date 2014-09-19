@@ -28,7 +28,7 @@ import Data.Ratio
 import Data.Decimal
 
 piEst :: Integer -> Decimal
-piEst digits = fromRational $ sum [((-1)^n % (2^(10*n + 6))) * sum zipWith (%) numerators denominators | n <- [0..digits],
+piEst digits = fromRational $ sum [((-1)^n % (2^(10*n + 6))) * (sum $ zipWith (%) numerators denominators) | n <- [0..digits],
                     let denominators = map fromIntegral [4*n + 1, 4*n + 3, 10*n + 1, 10*n + 3, 10*n + 5, 10*n + 7, 10*n + 9],
                     let numerators = map fromIntegral [-2^5, -1, 2^8, -2^6, -2^2, -2^2, 1]]
 
